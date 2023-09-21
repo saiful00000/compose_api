@@ -1,11 +1,10 @@
-package com.example.composeapi.data.models
+package com.example.composeapi.data.dto
 
 import kotlinx.serialization.Serializable
 
-data class StoryPost(
+@Serializable
+data class PostRequest(
     val userId: Int,
-    val id: Int,
     val title: String,
     val body: String,
 )
-
